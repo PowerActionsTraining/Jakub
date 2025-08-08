@@ -3,6 +3,11 @@ kind: workflow
 name: My workflow
 on:
   workflow_dispatch:
+    inputs:
+      firstname:
+        type: string
+        default: Jakub
+        required: true
 jobs:
   build:
     steps:
